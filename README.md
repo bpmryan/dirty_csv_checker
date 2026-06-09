@@ -14,5 +14,5 @@ pytest -v
 `
 
 `
-pytest --cov=clean_engine --cov-report=term-missing
+pytest --cov=code --cov-report=term-missing
 `
