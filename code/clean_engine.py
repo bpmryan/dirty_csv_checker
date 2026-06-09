@@ -2,6 +2,9 @@ import pandas as pd
 
 
 def clean_user_data(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Filters a dataframe based on strict schema requirements.
+    Invariants: 'age' must be within [0, 120], and 'email' must contain '@'.
+    """
     if df.empty:
         return pd.DataFrame(columns=df.columns), pd.DataFrame(columns=df.columns)
 
